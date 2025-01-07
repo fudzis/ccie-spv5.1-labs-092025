@@ -20,7 +20,8 @@ interface GigabitEthernet1
 ip http client source-interface GigabitEthernet1
 ip tftp source-interface GigabitEthernet1
 ip route vrf clab-mgmt 0.0.0.0 0.0.0.0 10.0.0.2
-!"""
+!
+"""
 
 
 user_directory = input('Enter directory for CSR config to change: ')
@@ -33,5 +34,19 @@ for filename in os.listdir(user_directory):
 
     if 'vrf definition clab-mgmt' not in file_contents:
         with open(file_path, 'w') as file:
+            clab_config_added = False
+            line_num = 0
             for line in file_contents.splitlines():
-                print(line)
+                if not line.startswith('!') and not clab_config_added and line_num != 0:
+                    file.write(clab_config)
+                    clab_config_added = True
+                line = line.replace('GigabitEthernet4', 'GigabitEthernet5')
+                line = line.replace('GigabitEthernet3', 'GigabitEthernet4')
+                line = line.replace('GigabitEthernet2', 'GigabitEthernet3')
+                line = line.replace('GigabitEthernet1', 'GigabitEthernet2')
+
+                file.write(line + '\n')
+                line_num += 1
+
+                if 'interface GigabitEthernet' in line:
+                    file.write(' no shutdown' + '\n')
