@@ -36,6 +36,7 @@ for filename in os.listdir(user_directory):
         with open(file_path, 'w') as file:
             clab_config_added = False
             line_num = 0
+            skip_count = 0
             for line in file_contents.splitlines():
                 if not line.startswith('!') and not clab_config_added and line_num != 0:
                     file.write(clab_config)
@@ -45,7 +46,16 @@ for filename in os.listdir(user_directory):
                 line = line.replace('GigabitEthernet2', 'GigabitEthernet3')
                 line = line.replace('GigabitEthernet1', 'GigabitEthernet2')
 
-                file.write(line + '\n')
+                if skip_count == 0 and line.strip() == 'line vty 0 4':
+                    file.write(line + '\n')
+                    file.write(' login local\n')
+                    file.write(' transport input all\n')
+                    skip_count = 2
+                elif skip_count > 0:
+                    skip_count -= 1
+                else:
+                    file.write(line + '\n')
+
                 line_num += 1
 
                 if 'interface GigabitEthernet' in line:
