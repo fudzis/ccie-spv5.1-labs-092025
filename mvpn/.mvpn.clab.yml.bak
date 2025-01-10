@@ -44,11 +44,13 @@ topology:
     C2:
       kind: linux
       mgmt-ipv4: 10.200.255.11
+      startup-delay: 60
       binds:
         - lab_configs/C2/basic.profile0.cfg:/config/startup-config.cfg
     C3:
       kind: linux
       mgmt-ipv4: 10.200.255.12
+      startup-delay: 60
       binds:
         - lab_configs/C3/basic.profile0.cfg:/config/startup-config.cfg
   links:
