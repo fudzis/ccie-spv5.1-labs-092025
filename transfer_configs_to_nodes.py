@@ -47,6 +47,24 @@ def copy_files_to_node(node):
                 net_connect.send_command('', expect_string = node["name"])
 
 
+    if node['kind'] == 'cisco_xrv':
+        router = {
+            'device_type': 'cisco_xr',
+            'ip': node['mgmt-ipv4'],
+            'username': 'cisco',
+            'password': 'cisco',
+            'read_timeout_override': 90
+            }
+
+        net_connect = ConnectHandler(**router)
+        for filename in os.listdir(f'{user_directory}/lab_configs/{node["name"]}'):
+            net_connect.send_command(f'copy http://{server_ip}:8000/{user_directory}/lab_configs/{node["name"]}/{filename} bootflash:{filename}',
+                expect_string = 'Destination')
+            output = net_connect.send_command(filename, expect_string = r'confirm\]|#')
+            if 'confirm' in output:
+                net_connect.send_command('\n', expect_string=node["name"])
+
+
 server_ip = get_server_ip()
 server_thread = threading.Thread(target=start_http_server, daemon=True)
 server_thread.start()
@@ -63,3 +81,4 @@ clab_nodes = [{"name": key, **value} for key, value in clab_topology["topology"]
 
 with ThreadPoolExecutor(max_workers=5) as executor:
     executor.map(copy_files_to_node, clab_nodes)
+
