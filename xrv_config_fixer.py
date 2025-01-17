@@ -26,7 +26,7 @@ http client source-interface ipv4 MgmtEth0/0/CPU0/0
 """
 
 
-user_directory = input('Enter directory for CSR config to change: ')
+user_directory = input('Enter directory for XRv config to change: ')
 
 for filename in os.listdir(user_directory):
     file_path = os.path.join(user_directory, filename)
