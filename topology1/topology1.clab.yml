@@ -15,38 +15,48 @@ topology:
     XR1:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.2
+      startup-config: lab_configs/XR1/top1.ip.addressing.cfg
     XR2:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/XR2/top1.ip.addressing.cfg
     XR3:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.4
+      startup-config: lab_configs/XR3/top1.ip.addressing.cfg
     XR4:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.5
+      startup-config: lab_configs/XR4/top1.ip.addressing.cfg
     XR5:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.6
+      startup-config: lab_configs/XR5/top1.ip.addressing.cfg
     XR6:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.7
       startup-delay: 300
+      startup-config: lab_configs/XR6/top1.ip.addressing.cfg
     XR7:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.8
       startup-delay: 300
+      startup-config: lab_configs/XR7/top1.ip.addressing.cfg
     XR8:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.9
       startup-delay: 300
+      startup-config: lab_configs/XR8/top1.ip.addressing.cfg
     XR9:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.10
       startup-delay: 300
+      startup-config: lab_configs/XR9/top1.ip.addressing.cfg
     XR10:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.11
       startup-delay: 300
+      startup-config: lab_configs/XR10/top1.ip.addressing.cfg
     CSR1:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.12
