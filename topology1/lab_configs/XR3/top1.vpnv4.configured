@@ -1,0 +1,74 @@
+!! IOS XR Configuration 7.7.1
+!! Last configuration change at Sat Dec 23 16:20:24 2023 by cisco
+!
+hostname XR3
+group ISIS
+ router isis '1'
+  is-type level-2-only
+  address-family ipv4 unicast
+   metric-style wide
+   advertise passive-only
+  !
+  address-family ipv6 unicast
+   advertise passive-only
+  !
+  interface 'Gigabit.*'
+   point-to-point
+   address-family ipv4 unicast
+   !
+   address-family ipv6 unicast
+   !
+  !
+  interface 'Loopback.*'
+   passive
+   address-family ipv4 unicast
+   !
+   address-family ipv6 unicast
+   !
+  !
+ !
+end-group
+username cisco
+ group root-lr
+ group cisco-support
+ password 7 01100F175804
+!
+interface Loopback0
+ ipv4 address 10.0.0.3 255.255.255.255
+ ipv6 address 2001:db8:200::3/128
+!
+interface GigabitEthernet0/0/0/0.3013
+ ipv4 address 10.1.3.3 255.255.255.0
+ ipv6 address 2001:db8:100:13::3/64
+ encapsulation dot1q 3013
+!
+interface GigabitEthernet0/0/0/0.3034
+ ipv4 address 10.3.4.3 255.255.255.0
+ ipv6 address 2001:db8:100:34::3/64
+ encapsulation dot1q 3034
+!
+interface GigabitEthernet0/0/0/0.3133
+ ipv4 address 10.3.7.3 255.255.255.0
+ ipv6 address 2001:db8:100:37::3/64
+ encapsulation dot1q 3133
+!
+interface GigabitEthernet0/0/0/0.3134
+ ipv4 address 10.3.8.3 255.255.255.0
+ ipv6 address 2001:db8:100:38::3/64
+ encapsulation dot1q 3134
+!
+router isis 1
+ apply-group ISIS
+ net 49.0000.0000.0000.0003.00
+ interface Loopback0
+ !
+ interface GigabitEthernet0/0/0/0.3013
+ !
+ interface GigabitEthernet0/0/0/0.3034
+ !
+ interface GigabitEthernet0/0/0/0.3133
+ !
+ interface GigabitEthernet0/0/0/0.3134
+ !
+!
+end
