@@ -1,6 +1,8 @@
 import os
 
-clab_config = """vrf clab-mgmt
+clab_config = """root
+!
+vrf clab-mgmt
  description Containerlab management VRF (DO NOT DELETE)
  address-family ipv4 unicast
  !
@@ -22,6 +24,8 @@ ssh server vrf clab-mgmt
 !
 http client vrf clab-mgmt
 http client source-interface ipv4 MgmtEth0/0/CPU0/0
+!
+line default exec-timeout 0 0
 !
 """
 
