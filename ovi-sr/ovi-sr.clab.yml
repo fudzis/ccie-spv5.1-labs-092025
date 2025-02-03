@@ -32,42 +32,52 @@ topology:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.7
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     R7:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.8
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     R8:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.9
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     R9:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.10
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     R10:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.11
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     CE101:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.12
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 600
     CE102:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.13
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 600
     CE107:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.14
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 600
     CE108:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.15
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 600
     CE109:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.16
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 600
   links:
     - endpoints: ["R1:eth2","CE101:eth2"]
     - endpoints: ["R2:eth3","CE102:eth3"]
