@@ -3,145 +3,197 @@
 	<Putty>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>P1</DisplayName>
+			<DisplayName>R1</DisplayName>
 			<UID>{2C1A01D0-0377-45B2-88F5-FCB32E14B233}</UID>
 			<ServerName>10.200.255.2</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>cFZ1VCHbJIM1IBB1cDskWg==</Password>
+			<UserName>clab</UserName>
+			<Password>CV5lgSYRYZaC0yYajrCV/Rau3Q1+YbOV</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.2 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.2 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>P2</DisplayName>
-			<UID>{A283171F-2618-4F13-B095-D6E5C363BC24}</UID>
+			<DisplayName>R2</DisplayName>
+			<UID>{71504B78-86F1-4758-A7B9-F94D20B8EB63}</UID>
 			<ServerName>10.200.255.3</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>TEjzwibSeR7fJ3detlYy7g==</Password>
+			<UserName>clab</UserName>
+			<Password>V3XuNi0YxbkUS+0JrLCl2dW//xmZS0Ql</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.3 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.3 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>PE1</DisplayName>
-			<UID>{D0A79604-E3C2-404F-9CC2-64EE2258E895}</UID>
+			<DisplayName>R3</DisplayName>
+			<UID>{2DE6CC80-8E24-4B71-8DAA-5ED6776ED7AF}</UID>
 			<ServerName>10.200.255.4</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>GGujPAhEPq9cXzlvx8i1hw==</Password>
+			<UserName>clab</UserName>
+			<Password>QRODO0O85MPyHT6GoJ0oAF0KnqOkrFfj</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.4 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.4 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>PE2</DisplayName>
-			<UID>{AFD7E9AF-FD9B-4F21-8ADE-43447A563C4E}</UID>
+			<DisplayName>R4</DisplayName>
+			<UID>{304C7770-11A8-4C00-A8B4-4844EC11661F}</UID>
 			<ServerName>10.200.255.5</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>dlJs0AISd2OgnHzKAaQHow==</Password>
+			<UserName>clab</UserName>
+			<Password>JCa2g3tWZCLHf6ynp55rza4SsdcD7dWG</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.5 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.5 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>PE3</DisplayName>
-			<UID>{116F38D4-B2B0-4178-81FC-E2A3EB81CF0F}</UID>
+			<DisplayName>R5</DisplayName>
+			<UID>{4FFB8AE7-E45F-4447-8BE8-181D24F7BA87}</UID>
 			<ServerName>10.200.255.6</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>+MOvh151CX/Vq6xdaJ0n7A==</Password>
+			<UserName>clab</UserName>
+			<Password>akAtpM9M3FF+G/hqz8YqbmP07stv6zQa</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.6 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.6 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CE1</DisplayName>
-			<UID>{3A4C307C-1618-4804-A632-710906A60489}</UID>
+			<DisplayName>R6</DisplayName>
+			<UID>{0C52FFD8-69A3-432C-A74E-BC8276458765}</UID>
 			<ServerName>10.200.255.7</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>79fnJiZN1x9jH8A4HYVmNg==</Password>
+			<UserName>clab</UserName>
+			<Password>Zk93mXjRlKzXU624G0qzRgJ4qbb3FsAh</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.7 -ssh  -l admin</CLParams>
+			<CLParams>10.200.255.7 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CE2</DisplayName>
-			<UID>{964CFDD3-56C6-4E76-88D4-570F556F65AC}</UID>
+			<DisplayName>R7</DisplayName>
+			<UID>{76B2FF2B-904E-4A03-AA9C-7D5B261B9757}</UID>
 			<ServerName>10.200.255.8</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>mOgK6ZHYyJ3i/rr6QexVzw==</Password>
+			<UserName>clab</UserName>
+			<Password>kK959Vyk+/ReiKEXs8d7THnVr6UjKugY</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.8 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.8 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CE3</DisplayName>
-			<UID>{1D97C8BB-06CB-4768-BA7B-C8060B80419B}</UID>
+			<DisplayName>R8</DisplayName>
+			<UID>{6057E831-D878-41E4-B08A-00E39E21306A}</UID>
 			<ServerName>10.200.255.9</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>qtmNcGsWq3Lh6byykFI39g==</Password>
+			<UserName>clab</UserName>
+			<Password>fs33wLrST/OzJYd9Mdd7RdELPPGWC0eE</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.9 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.9 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>C1</DisplayName>
-			<UID>{3CC1E340-1BBA-4CC2-8E9F-8766890339B2}</UID>
+			<DisplayName>R9</DisplayName>
+			<UID>{0AD32F36-D37D-49AD-8492-A1F92F3A30AC}</UID>
 			<ServerName>10.200.255.10</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>fAmTCxMBM+td0qHDOk3nEA==</Password>
+			<UserName>clab</UserName>
+			<Password>XfQu45pwWJS9ztBmnR94t8KUYGhBlIEr</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.10 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.10 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>C2</DisplayName>
-			<UID>{DB94B413-B5AD-4D9C-BA34-797B9EB85574}</UID>
+			<DisplayName>R10</DisplayName>
+			<UID>{54E71B87-4D12-4053-BE42-176FA21FE767}</UID>
 			<ServerName>10.200.255.11</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>SyPTdfrDDFnx1OGfYtLKzA==</Password>
+			<UserName>clab</UserName>
+			<Password>lo2gIu43ulwAPxlUbj+CEqTaZXEgk+dz</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.11 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.11 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>C3</DisplayName>
-			<UID>{67DDD66C-388F-4E3D-B745-F25AAD69561F}</UID>
+			<DisplayName>CE101</DisplayName>
+			<UID>{8C5FFDF3-87B9-4C16-BCDE-AA7AD1E2EB6F}</UID>
 			<ServerName>10.200.255.12</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>6CAmnBxf5sn4AWuIXwL6Dg==</Password>
+			<UserName>clab</UserName>
+			<Password>6cxBuv/uhAyRxbdpZSnStyKkxNeJfFOS</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.12 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.12 -ssh -l clab</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>CE102</DisplayName>
+			<UID>{06A18D7D-6EFA-4730-AE64-BC5DA2E57EF0}</UID>
+			<ServerName>10.200.255.13</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>clab</UserName>
+			<Password>r2wtLpROKAu/EjxrrypirEC/fxK6yYND</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.13 -ssh -l clab</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>CE107</DisplayName>
+			<UID>{2805BDA8-8DE6-484C-BA97-E57C22EB6587}</UID>
+			<ServerName>10.200.255.14</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>clab</UserName>
+			<Password>vgQhDGfU6+zUuEcPLhNH+Asg7Zc4py39</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.14 -ssh -l clab</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>CE108</DisplayName>
+			<UID>{30A8C956-DCA3-4787-B4B9-963BFC05B2B8}</UID>
+			<ServerName>10.200.255.15</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>clab</UserName>
+			<Password>ayEZePy1gSu/O0SicyTC1MdRCM0VsLjM</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.15 -ssh -l clab</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>CE109</DisplayName>
+			<UID>{16232E90-F179-4267-AA1F-8F8C2A48ED11}</UID>
+			<ServerName>10.200.255.16</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>clab</UserName>
+			<Password>wnVnYbWHmsra0fW9bd1V6ZVPbWcKECyf</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.16 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 	</Putty>
