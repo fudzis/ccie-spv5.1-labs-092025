@@ -55,6 +55,16 @@ def copy_files_to_node(node):
             'password': 'cisco',
             'read_timeout_override': 90
             }
+    
+        if user_directory in ['ovi-sr']:
+            router = {
+                'device_type': 'cisco_xr',
+                'ip': node['mgmt-ipv4'],
+                'username': 'clab',
+                'password': 'clab@123',
+                'read_timeout_override': 90
+                }
+
 
         net_connect = ConnectHandler(**router)
         for filename in os.listdir(f'{user_directory}/lab_configs/{node["name"]}'):
