@@ -40,10 +40,6 @@ topology:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.9
       startup-config: lab_configs/xrv_startup_config.cfg
-    R8:
-      kind: cisco_xrv
-      mgmt-ipv4: 10.200.255.9
-      startup-config: lab_configs/xrv_startup_config.cfg
     R9:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.10
