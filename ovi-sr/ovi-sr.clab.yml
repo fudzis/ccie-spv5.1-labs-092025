@@ -5,65 +5,94 @@ mgmt:
 
 topology:
   kinds:
-    linux:
-      image: vrnetlab/cisco_vios:15.9.3M3
     cisco_xrv:
-      image: vrnetlab/cisco_xrv:6.3.1
-    cisco_csr1000v:
-      image: vrnetlab/cisco_csr1000v:16.09.08
+      image: vrnetlab/cisco_xrv:6.6.3
   nodes:
-    P1:
+    R1:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.2
       startup-config: lab_configs/xrv_startup_config.cfg
-    P2:
+    R2:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.3
       startup-config: lab_configs/xrv_startup_config.cfg
-    PE1:
-      kind: cisco_csr1000v
+    R3:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.4
-    PE2:
-      kind: cisco_csr1000v
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R4:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.5
-    PE3:
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R5:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.6
       startup-config: lab_configs/xrv_startup_config.cfg
-    CE1:
-      kind: cisco_csr1000v
+    R6:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.7
-    CE2:
-      kind: cisco_csr1000v
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R7:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.8
-    CE3:
-      kind: cisco_csr1000v
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R8:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.9
-    C1:
-      kind: linux
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R8:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.9
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R9:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.10
-      binds:
-        - lab_configs/C1/basic.profile0.cfg:/config/startup-config.cfg
-    C2:
-      kind: linux
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R10:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.11
-      startup-delay: 300
-      binds:
-        - lab_configs/C2/basic.profile0.cfg:/config/startup-config.cfg
-    C3:
-      kind: linux
+      startup-config: lab_configs/xrv_startup_config.cfg
+    CE101:
+      kind: cisco_xrv
       mgmt-ipv4: 10.200.255.12
-      startup-delay: 300
-      binds:
-        - lab_configs/C3/basic.profile0.cfg:/config/startup-config.cfg
+      startup-config: lab_configs/xrv_startup_config.cfg
+    CE102:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.13
+      startup-config: lab_configs/xrv_startup_config.cfg
+    CE107:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.14
+      startup-config: lab_configs/xrv_startup_config.cfg
+    CE108:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.15
+      startup-config: lab_configs/xrv_startup_config.cfg
+    CE109:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.16
+      startup-config: lab_configs/xrv_startup_config.cfg
   links:
-    - endpoints: ["P1:eth1","P2:eth1"]
-    - endpoints: ["P1:eth2","PE1:eth1"]
-    - endpoints: ["P2:eth2","PE2:eth1"]
-    - endpoints: ["P2:eth3","PE3:eth1"]
-    - endpoints: ["PE1:eth2","CE1:eth1"]
-    - endpoints: ["PE2:eth2","CE2:eth1"]
-    - endpoints: ["PE3:eth2","CE3:eth1"]
-    - endpoints: ["CE1:eth2","C1:eth1"]
-    - endpoints: ["CE2:eth2","C2:eth1"]
-    - endpoints: ["CE3:eth2","C3:eth1"]
+    - endpoints: ["R1:eth2","CE101:eth2"]
+    - endpoints: ["R2:eth3","CE102:eth3"]
+    - endpoints: ["R7:eth8","CE107:eth8"]
+    - endpoints: ["R8:eth9","CE108:eth9"]
+    - endpoints: ["R9:eth10","CE109:eth10"]
+    - endpoints: ["R1:eth4","R3:eth2"]
+    - endpoints: ["R1:eth5","R4:eth2"]
+    - endpoints: ["R2:eth4","R3:eth3"]
+    - endpoints: ["R2:eth5","R4:eth3"]
+    - endpoints: ["R3:eth5","R4:eth4"]
+    - endpoints: ["R3:eth6","R5:eth4"]
+    - endpoints: ["R3:eth7","R6:eth4"]
+    - endpoints: ["R3:eth10","R9:eth4"]
+    - endpoints: ["R4:eth6","R5:eth5"]
+    - endpoints: ["R4:eth7","R6:eth5"]
+    - endpoints: ["R4:eth11","R10:eth5"]
+    - endpoints: ["R5:eth7","R6:eth6"]
+    - endpoints: ["R5:eth8","R7:eth6"]
+    - endpoints: ["R5:eth9","R8:eth6"]
+    - endpoints: ["R5:eth10","R9:eth6"]
+    - endpoints: ["R6:eth8","R7:eth7"]
+    - endpoints: ["R6:eth9","R8:eth7"]
+    - endpoints: ["R6:eth11","R10:eth7"]
