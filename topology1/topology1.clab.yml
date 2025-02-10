@@ -57,37 +57,42 @@ topology:
       mgmt-ipv4: 10.200.255.11
       startup-delay: 300
       startup-config: lab_configs/XR10/top1.ip.addressing.cfg
-    CSR1:
-      kind: cisco_csr1000v
+    XR11:
+      kind: cisco_xrd
       mgmt-ipv4: 10.200.255.12
-      startup-delay: 400
-    CSR2:
+      startup-delay: 300
+      startup-config: lab_configs/XR11/top2.sdn.transport.init.cfg
+    CSR1:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.13
       startup-delay: 400
-    CSR3:
+    CSR2:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.14
-      startup-delay: 600
-    CSR4:
+      startup-delay: 400
+    CSR3:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.15
       startup-delay: 600
-    CSR5:
+    CSR4:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.16
-      startup-delay: 800
-    CSR6:
+      startup-delay: 600
+    CSR5:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.17
       startup-delay: 800
-    CSR7:
+    CSR6:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.18
+      startup-delay: 800
+    CSR7:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.19
       startup-delay: 1000
     SW:
       kind: ceos
-      mgmt-ipv4: 10.200.255.19
+      mgmt-ipv4: 10.200.255.20
       startup-config: lab_configs/SW.cfg
   links:
     - endpoints: ["XR1:Gi0-0-0-0","SW:eth1"]
@@ -100,10 +105,11 @@ topology:
     - endpoints: ["XR8:Gi0-0-0-0","SW:eth8"]
     - endpoints: ["XR9:Gi0-0-0-0","SW:eth9"]
     - endpoints: ["XR10:Gi0-0-0-0","SW:eth10"]
-    - endpoints: ["CSR1:eth1","SW:eth11"]
-    - endpoints: ["CSR2:eth1","SW:eth12"]
-    - endpoints: ["CSR3:eth1","SW:eth13"]
-    - endpoints: ["CSR4:eth1","SW:eth14"]
-    - endpoints: ["CSR5:eth1","SW:eth15"]
-    - endpoints: ["CSR6:eth1","SW:eth16"]
-    - endpoints: ["CSR7:eth1","SW:eth17"]
+    - endpoints: ["XR11:Gi0-0-0-0","SW:eth11"]
+    - endpoints: ["CSR1:eth1","SW:eth12"]
+    - endpoints: ["CSR2:eth1","SW:eth13"]
+    - endpoints: ["CSR3:eth1","SW:eth14"]
+    - endpoints: ["CSR4:eth1","SW:eth15"]
+    - endpoints: ["CSR5:eth1","SW:eth16"]
+    - endpoints: ["CSR6:eth1","SW:eth17"]
+    - endpoints: ["CSR7:eth1","SW:eth18"]
