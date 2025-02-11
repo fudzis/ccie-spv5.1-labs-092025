@@ -1,0 +1,120 @@
+name: evpn
+mgmt:
+  network: fixedips
+  ipv4-subnet: 10.200.255.0/24
+
+topology:
+  kinds:
+    cisco_xrd:
+      image: ios-xr/xrd-control-plane:7.9.2
+    cisco_csr1000v:
+      image: vrnetlab/cisco_csr1000v:16.09.08
+  nodes:
+    P1:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.2
+      startup-config: lab_configs/P1/basic.isis.ldp.bgp.cfg
+    P2:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/P2/basic.isis.ldp.bgp.cfg
+    PE1:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.4
+    PE2:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.5
+    PE3:
+      kind: cisco_csr1000v
+      startup-delay: 100
+      mgmt-ipv4: 10.200.255.6
+    PE4:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.7
+      startup-delay: 200
+    PE5:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.8
+      startup-delay: 300
+      startup-config: lab_configs/PE5/basic.isis.ldp.bgp.cfg
+    PE6:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.9
+      startup-delay: 300
+      startup-config: lab_configs/PE6/basic.isis.ldp.bgp.cfg
+    PE7:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.10
+      startup-delay: 300
+      startup-config: lab_configs/PE7/basic.isis.ldp.bgp.cfg
+    PE8:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.11
+      startup-delay: 300
+      startup-config: lab_configs/PE8/basic.isis.ldp.bgp.cfg
+    CE1:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.12
+      startup-delay: 300
+    CE2:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.13
+      startup-delay: 400
+    CE3:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.14
+      startup-delay: 400
+    CE4:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.15
+      startup-delay: 600
+    CE5:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.16
+      startup-delay: 600
+    CE6:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.17
+      startup-delay: 800
+    CE7:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.18
+      startup-delay: 800
+    CE8:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.19
+      startup-delay: 1000
+    CE9:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.19
+      startup-delay: 1000
+  links:
+    - endpoints: ["P1:Gi0-0-0-0","PE1:eth1"]
+    - endpoints: ["P1:Gi0-0-0-1","PE2:eth1"]
+    - endpoints: ["P1:Gi0-0-0-2","PE3:eth1"]
+    - endpoints: ["P1:Gi0-0-0-3","PE4:eth1"]
+    - endpoints: ["P1:Gi0-0-0-4","PE5:Gi0-0-0-0"]
+    - endpoints: ["P1:Gi0-0-0-5","PE6:Gi0-0-0-0"]
+    - endpoints: ["P1:Gi0-0-0-6","PE7:Gi0-0-0-0"]
+    - endpoints: ["P1:Gi0-0-0-7","PE8:Gi0-0-0-0"]
+    - endpoints: ["P2:Gi0-0-0-0","PE1:eth2"]
+    - endpoints: ["P2:Gi0-0-0-1","PE2:eth2"]
+    - endpoints: ["P2:Gi0-0-0-2","PE3:eth2"]
+    - endpoints: ["P2:Gi0-0-0-3","PE4:eth2"]
+    - endpoints: ["P2:Gi0-0-0-4","PE5:Gi0-0-0-1"]
+    - endpoints: ["P2:Gi0-0-0-5","PE6:Gi0-0-0-1"]
+    - endpoints: ["P2:Gi0-0-0-6","PE7:Gi0-0-0-1"]
+    - endpoints: ["P2:Gi0-0-0-7","PE8:Gi0-0-0-1"]
+    - endpoints: ["PE1:eth3","CE1:eth1"]
+    - endpoints: ["PE1:eth4","CE2:eth1"]
+    - endpoints: ["PE2:eth4","CE2:eth2"]
+    - endpoints: ["PE2:eth3","CE3:eth1"]
+    - endpoints: ["PE3:eth3","CE4:eth1"]
+    - endpoints: ["PE3:eth4","CE5:eth1"]
+    - endpoints: ["PE4:eth4","CE5:eth2"]
+    - endpoints: ["PE5:Gi0-0-0-2","CE6:eth1"]
+    - endpoints: ["PE5:Gi0-0-0-3","CE7:eth1"]
+    - endpoints: ["PE6:Gi0-0-0-3","CE7:eth2"]
+    - endpoints: ["PE6:Gi0-0-0-2","CE8:eth1"]
+    - endpoints: ["PE7:Gi0-0-0-3","CE9:eth1"]
+    - endpoints: ["PE8:Gi0-0-0-3","CE9:eth2"]
