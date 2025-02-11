@@ -1,0 +1,49 @@
+name: mh-evpn
+mgmt:
+  network: fixedips
+  ipv4-subnet: 10.200.255.0/24
+
+topology:
+  kinds:
+    cisco_xrd:
+      image: ios-xr/xrd-control-plane:7.9.2
+  nodes:
+    CE1:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.2
+      startup-config: lab_configs/CE1/init.cfg
+    CE2:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/CE2/init.cfg
+    P1:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.4
+      startup-config: lab_configs/P1/init.cfg
+    PE1:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.5
+      startup-config: lab_configs/PE1/init.cfg
+    PE2:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.6
+      startup-config: lab_configs/PE2/init.cfg
+    PE3:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.7
+      startup-delay: 300
+      startup-config: lab_configs/PE3/init.cfg
+    PE4:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.8
+      startup-delay: 300
+      startup-config: lab_configs/PE4/init.cfg
+  links:
+    - endpoints: ["CE1:Gi0-0-0-1","PE1:Gi0-0-0-1"]
+    - endpoints: ["CE1:Gi0-0-0-2","PE2:Gi0-0-0-1"]
+    - endpoints: ["CE2:Gi0-0-0-1","PE3:Gi0-0-0-1"]
+    - endpoints: ["CE2:Gi0-0-0-2","PE4:Gi0-0-0-1"]
+    - endpoints: ["P1:Gi0-0-0-0","PE1:Gi0-0-0-0"]
+    - endpoints: ["P1:Gi0-0-0-1","PE2:Gi0-0-0-0"]
+    - endpoints: ["P1:Gi0-0-0-2","PE3:Gi0-0-0-0"]
+    - endpoints: ["P1:Gi0-0-0-3","PE4:Gi0-0-0-0"]
