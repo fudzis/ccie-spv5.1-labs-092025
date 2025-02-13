@@ -1,0 +1,126 @@
+name: l2vpn
+mgmt:
+  network: fixedips
+  ipv4-subnet: 10.200.255.0/24
+
+topology:
+  kinds:
+    linux:
+      image: vrnetlab/cisco_vios:15.9.3M3
+    cisco_xrd:
+      image: ios-xr/xrd-control-plane:7.9.2
+    cisco_csr1000v:
+      image: vrnetlab/cisco_csr1000v:16.09.08
+  nodes:
+    XR1:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.2
+      startup-config: lab_configs/XR1/
+    XR2:
+      kind: cisco_xrd
+      mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/XR2/
+    R1:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.4
+    R2:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.5
+    R3:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.6
+      startup-delay: 200
+    R4:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.7
+      startup-delay: 200
+    R5:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.8
+      startup-delay: 400
+    R6:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.9
+      startup-delay: 400
+    CE1:
+      kind: linux
+      mgmt-ipv4: 10.200.255.10
+      binds:
+        - lab_configs/CE1/basic.profile0.cfg:/config/startup-config.cfg
+    CE2:
+      kind: linux
+      mgmt-ipv4: 10.200.255.11
+      startup-delay: 300
+      binds:
+        - lab_configs/CE2/basic.profile0.cfg:/config/startup-config.cfg
+    CE3:
+      kind: linux
+      mgmt-ipv4: 10.200.255.12
+      startup-delay: 300
+      binds:
+        - lab_configs/CE3/basic.profile0.cfg:/config/startup-config.cfg
+    CE4:
+      kind: linux
+      mgmt-ipv4: 10.200.255.13
+      startup-delay: 400
+      binds:
+        - lab_configs/CE4/basic.profile0.cfg:/config/startup-config.cfg
+    CE5:
+      kind: linux
+      mgmt-ipv4: 10.200.255.14
+      startup-delay: 400
+      binds:
+        - lab_configs/CE5/basic.profile0.cfg:/config/startup-config.cfg
+    CE6:
+      kind: linux
+      mgmt-ipv4: 10.200.255.15
+      startup-delay: 500
+      binds:
+        - lab_configs/CE6/basic.profile0.cfg:/config/startup-config.cfg
+    CE7:
+      kind: linux
+      mgmt-ipv4: 10.200.255.16
+      startup-delay: 500
+      binds:
+        - lab_configs/CE7/basic.profile0.cfg:/config/startup-config.cfg
+    CE8:
+      kind: linux
+      mgmt-ipv4: 10.200.255.17
+      startup-delay: 600
+      binds:
+        - lab_configs/CE8/basic.profile0.cfg:/config/startup-config.cfg
+    CE9:
+      kind: linux
+      mgmt-ipv4: 10.200.255.18
+      startup-delay: 600
+      binds:
+        - lab_configs/CE9/basic.profile0.cfg:/config/startup-config.cfg
+    CE10:
+      kind: linux
+      mgmt-ipv4: 10.200.255.19
+      startup-delay: 700
+      binds:
+        - lab_configs/CE10/basic.profile0.cfg:/config/startup-config.cfg
+    CE11:
+      kind: linux
+      mgmt-ipv4: 10.200.255.20
+      startup-delay: 700
+      binds:
+        - lab_configs/CE11/basic.profile0.cfg:/config/startup-config.cfg
+    CE12:
+      kind: linux
+      mgmt-ipv4: 10.200.255.21
+      startup-delay: 800
+      binds:
+        - lab_configs/CE12/basic.profile0.cfg:/config/startup-config.cfg
+  links:
+    - endpoints: ["P1:eth1","P2:eth1"]
+    - endpoints: ["P1:eth2","PE1:eth1"]
+    - endpoints: ["P2:eth2","PE2:eth1"]
+    - endpoints: ["P2:eth3","PE3:eth1"]
+    - endpoints: ["PE1:eth2","CE1:eth1"]
+    - endpoints: ["PE2:eth2","CE2:eth1"]
+    - endpoints: ["PE3:eth2","CE3:eth1"]
+    - endpoints: ["CE1:eth2","C1:eth1"]
+    - endpoints: ["CE2:eth2","C2:eth1"]
+    - endpoints: ["CE3:eth2","C3:eth1"]
