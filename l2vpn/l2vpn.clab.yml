@@ -46,73 +46,73 @@ topology:
       kind: linux
       mgmt-ipv4: 10.200.255.10
       binds:
-        - lab_configs/CE1/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE1/blank.cfg:/config/startup-config.cfg
     CE2:
       kind: linux
       mgmt-ipv4: 10.200.255.11
       startup-delay: 300
       binds:
-        - lab_configs/CE2/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE2/blank.cfg:/config/startup-config.cfg
     CE3:
       kind: linux
       mgmt-ipv4: 10.200.255.12
       startup-delay: 300
       binds:
-        - lab_configs/CE3/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE3/blank.cfg:/config/startup-config.cfg
     CE4:
       kind: linux
       mgmt-ipv4: 10.200.255.13
       startup-delay: 400
       binds:
-        - lab_configs/CE4/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE4/blank.cfg:/config/startup-config.cfg
     CE5:
       kind: linux
       mgmt-ipv4: 10.200.255.14
       startup-delay: 400
       binds:
-        - lab_configs/CE5/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE5/blank.cfg:/config/startup-config.cfg
     CE6:
       kind: linux
       mgmt-ipv4: 10.200.255.15
       startup-delay: 500
       binds:
-        - lab_configs/CE6/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE6/blank.cfg:/config/startup-config.cfg
     CE7:
       kind: linux
       mgmt-ipv4: 10.200.255.16
       startup-delay: 500
       binds:
-        - lab_configs/CE7/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE7/blank.cfg:/config/startup-config.cfg
     CE8:
       kind: linux
       mgmt-ipv4: 10.200.255.17
       startup-delay: 600
       binds:
-        - lab_configs/CE8/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE8/blank.cfg:/config/startup-config.cfg
     CE9:
       kind: linux
       mgmt-ipv4: 10.200.255.18
       startup-delay: 600
       binds:
-        - lab_configs/CE9/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE9/blank.cfg:/config/startup-config.cfg
     CE10:
       kind: linux
       mgmt-ipv4: 10.200.255.19
       startup-delay: 700
       binds:
-        - lab_configs/CE10/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE10/blank.cfg:/config/startup-config.cfg
     CE11:
       kind: linux
       mgmt-ipv4: 10.200.255.20
       startup-delay: 700
       binds:
-        - lab_configs/CE11/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE11/blank.cfg:/config/startup-config.cfg
     CE12:
       kind: linux
       mgmt-ipv4: 10.200.255.21
       startup-delay: 800
       binds:
-        - lab_configs/CE12/basic.profile0.cfg:/config/startup-config.cfg
+        - lab_configs/CE12/blank.cfg:/config/startup-config.cfg
   links:
     - endpoints: ["R1:eth1","R2:eth1"]
     - endpoints: ["R1:eth2","R5:eth3"]
