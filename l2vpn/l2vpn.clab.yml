@@ -15,11 +15,11 @@ topology:
     XR1:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.2
-      startup-config: lab_configs/XR1/
+      startup-config: lab_configs/XR1/isis.cfg
     XR2:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.3
-      startup-config: lab_configs/XR2/
+      startup-config: lab_configs/XR2/isis.cfg
     R1:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.4
