@@ -41,6 +41,11 @@ for filename in os.listdir(user_directory):
                 if not line.startswith('!') and not clab_config_added and line_num != 0:
                     file.write(clab_config)
                     clab_config_added = True
+                line = line.replace('GigabitEthernet9', 'GigabitEthernet10')
+                line = line.replace('GigabitEthernet8', 'GigabitEthernet9')
+                line = line.replace('GigabitEthernet7', 'GigabitEthernet8')
+                line = line.replace('GigabitEthernet6', 'GigabitEthernet7')
+                line = line.replace('GigabitEthernet5', 'GigabitEthernet6')
                 line = line.replace('GigabitEthernet4', 'GigabitEthernet5')
                 line = line.replace('GigabitEthernet3', 'GigabitEthernet4')
                 line = line.replace('GigabitEthernet2', 'GigabitEthernet3')
