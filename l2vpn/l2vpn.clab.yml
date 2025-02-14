@@ -124,7 +124,7 @@ topology:
     - endpoints: ["R2:eth4","R6:eth3"]
     - endpoints: ["R2:eth5","CE2:eth1"]
     - endpoints: ["R2:eth6","R5:eth6"]
-    - endpoints: ["R3:eth2","XR1:Gi0-0-0-0""]
+    - endpoints: ["R3:eth2","XR1:Gi0-0-0-0"]
     - endpoints: ["R3:eth3","R5:eth4"]
     - endpoints: ["R3:eth4","XR2:Gi0-0-0-1"]
     - endpoints: ["R3:eth5","CE3:eth1"]
