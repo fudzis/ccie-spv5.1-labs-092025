@@ -56,7 +56,7 @@ topology:
     CE3:
       kind: linux
       mgmt-ipv4: 10.200.255.12
-      startup-delay: 300
+      startup-delay: 350
       binds:
         - lab_configs/CE3/blank.cfg:/config/startup-config.cfg
     CE4:
@@ -68,7 +68,7 @@ topology:
     CE5:
       kind: linux
       mgmt-ipv4: 10.200.255.14
-      startup-delay: 400
+      startup-delay: 450
       binds:
         - lab_configs/CE5/blank.cfg:/config/startup-config.cfg
     CE6:
@@ -80,7 +80,7 @@ topology:
     CE7:
       kind: linux
       mgmt-ipv4: 10.200.255.16
-      startup-delay: 500
+      startup-delay: 550
       binds:
         - lab_configs/CE7/blank.cfg:/config/startup-config.cfg
     CE8:
@@ -92,7 +92,7 @@ topology:
     CE9:
       kind: linux
       mgmt-ipv4: 10.200.255.18
-      startup-delay: 600
+      startup-delay: 650
       binds:
         - lab_configs/CE9/blank.cfg:/config/startup-config.cfg
     CE10:
@@ -104,7 +104,7 @@ topology:
     CE11:
       kind: linux
       mgmt-ipv4: 10.200.255.20
-      startup-delay: 700
+      startup-delay: 750
       binds:
         - lab_configs/CE11/blank.cfg:/config/startup-config.cfg
     CE12:
