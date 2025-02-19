@@ -47,6 +47,23 @@ def copy_files_to_node(node):
                 net_connect.send_command('', expect_string = node["name"])
 
 
+    if node['kind'] == 'cisco_iol':
+        router = {
+            'device_type': 'cisco_ios',
+            'ip': node['mgmt-ipv4'],
+            'username': 'admin',
+            'password': 'admin'
+            }
+
+        net_connect = ConnectHandler(**router)
+        for filename in os.listdir(f'{user_directory}/lab_configs/{node["name"]}'):
+            net_connect.send_command(f'copy http://{server_ip}:8000/{user_directory}/lab_configs/{node["name"]}/{filename} unix:{filename}',
+                expect_string = 'Destination')
+            output = net_connect.send_command(filename, expect_string = r'confirm\]|#')
+            if 'confirm' in output:
+                net_connect.send_command('', expect_string = node["name"])
+
+
     if node['kind'] == 'cisco_xrv':
         router = {
             'device_type': 'cisco_xr',
