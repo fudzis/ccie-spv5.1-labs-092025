@@ -13,27 +13,35 @@ topology:
     R1:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.2
+      startup-config: lab_configs/iol_http_source.partial
     R2:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/iol_http_source.partial
     R3:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.4
+      startup-config: lab_configs/iol_http_source.partial
     R4:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.5
+      startup-config: lab_configs/iol_http_source.partial
     R5:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.6
+      startup-config: lab_configs/iol_http_source.partial
     R6:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.7
+      startup-config: lab_configs/iol_http_source.partial
     R7:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.8
+      startup-config: lab_configs/iol_http_source.partial
     R8:
       kind: cisco_iol
       mgmt-ipv4: 10.200.255.9
+      startup-config: lab_configs/iol_http_source.partial
     SW:
       kind: ceos
       mgmt-ipv4: 10.200.255.10
