@@ -1,4 +1,4 @@
-name: russo-bgp-iol
+name: russo-bgp-xr
 mgmt:
   network: fixedips
   ipv4-subnet: 10.200.255.0/24
