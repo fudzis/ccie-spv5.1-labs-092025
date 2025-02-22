@@ -40,10 +40,12 @@ topology:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.8
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     R8:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.9
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     SW:
       kind: ceos
       mgmt-ipv4: 10.200.255.10
