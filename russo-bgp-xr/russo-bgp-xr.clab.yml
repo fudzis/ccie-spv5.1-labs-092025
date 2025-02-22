@@ -9,39 +9,41 @@ topology:
       image: vrnetlab/cisco_xrv:6.3.1
     ceos:
       image: ceos:4.32.0F
+    cisco_iol:
+      image: vrnetlab/cisco_iol:17.15.01
   nodes:
     R1:
-      kind: cisco_xrv
+      kind: cisco_iol
       mgmt-ipv4: 10.200.255.2
       startup-config: lab_configs/iol_http_source.partial
     R2:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.3
-      startup-config: lab_configs/iol_http_source.partial
+      startup-config: lab_configs/xrv_startup_config.cfg
     R3:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.4
-      startup-config: lab_configs/iol_http_source.partial
+      startup-config: lab_configs/xrv_startup_config.cfg
     R4:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.5
-      startup-config: lab_configs/iol_http_source.partial
+      startup-config: lab_configs/xrv_startup_config.cfg
     R5:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.6
-      startup-config: lab_configs/iol_http_source.partial
+      startup-config: lab_configs/xrv_startup_config.cfg
     R6:
-      kind: cisco_xrv
+      kind: cisco_iol
       mgmt-ipv4: 10.200.255.7
       startup-config: lab_configs/iol_http_source.partial
     R7:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.8
-      startup-config: lab_configs/iol_http_source.partial
+      startup-config: lab_configs/xrv_startup_config.cfg
     R8:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.9
-      startup-config: lab_configs/iol_http_source.partial
+      startup-config: lab_configs/xrv_startup_config.cfg
     SW:
       kind: ceos
       mgmt-ipv4: 10.200.255.10
