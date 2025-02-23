@@ -73,7 +73,7 @@ def copy_files_to_node(node):
             'read_timeout_override': 90
             }
     
-        if user_directory in ['ovi-sr']:
+        if user_directory in ['ovi-sr', 'russo-bgp-xr']:
             router = {
                 'device_type': 'cisco_xr',
                 'ip': node['mgmt-ipv4'],
