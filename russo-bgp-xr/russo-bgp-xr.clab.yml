@@ -6,7 +6,7 @@ mgmt:
 topology:
   kinds:
     cisco_xrv:
-      image: vrnetlab/cisco_xrv:6.3.1
+      image: vrnetlab/cisco_xrv:6.6.3
     ceos:
       image: ceos:4.32.0F
     cisco_iol:
