@@ -28,26 +28,32 @@ topology:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.6
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 200
     R6:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.7
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 250
     R7:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.8
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 300
     R8:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.9
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 350
     R9:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.10
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 400
     R10:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.11
       startup-config: lab_configs/xrv_startup_config.cfg
+      startup-delay: 450
   links:
     - endpoints: ["R1:eth1","R2:eth1"]
     - endpoints: ["R1:eth2","R3:eth1"]
