@@ -1,0 +1,62 @@
+name: bgp-mh-xr
+mgmt:
+  network: fixedips
+  ipv4-subnet: 10.200.255.0/24
+
+topology:
+  kinds:
+    cisco_xrv:
+      image: vrnetlab/cisco_xrv:6.6.3
+  nodes:
+    R1:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.2
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R2:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R3:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.4
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R4:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.5
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R5:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.6
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R6:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.7
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R7:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.8
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R8:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.9
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R9:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.10
+      startup-config: lab_configs/xrv_startup_config.cfg
+    R10:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.11
+      startup-config: lab_configs/xrv_startup_config.cfg
+  links:
+    - endpoints: ["R1:eth1","R2:eth1"]
+    - endpoints: ["R1:eth2","R3:eth1"]
+    - endpoints: ["R2:eth2","R4:eth2"]
+    - endpoints: ["R2:eth3","R10:eth3"]
+    - endpoints: ["R2:eth4","R5:eth4"]
+    - endpoints: ["R4:eth1","R5:eth1"]
+    - endpoints: ["R4:eth3","R7:eth3"]
+    - endpoints: ["R5:eth3","R8:eth3"]
+    - endpoints: ["R3:eth1","R6:eth1"]
+    - endpoints: ["R7:eth2","R8:eth2"]
+    - endpoints: ["R8:eth1","R9:eth1"]
