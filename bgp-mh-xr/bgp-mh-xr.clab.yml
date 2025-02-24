@@ -56,7 +56,7 @@ topology:
       startup-delay: 450
   links:
     - endpoints: ["R1:eth1","R2:eth1"]
-    - endpoints: ["R1:eth2","R3:eth1"]
+    - endpoints: ["R1:eth2","R3:eth2"]
     - endpoints: ["R2:eth2","R4:eth2"]
     - endpoints: ["R2:eth3","R10:eth3"]
     - endpoints: ["R2:eth4","R5:eth4"]
