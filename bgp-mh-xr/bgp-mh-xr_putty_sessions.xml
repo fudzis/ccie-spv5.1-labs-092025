@@ -8,10 +8,10 @@
 			<ServerName>10.200.255.2</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>8TfhEzjhLLumIyiBfJg8JQ==</Password>
+			<UserName>clab</UserName>
+			<Password>CV5lgSYRYZaC0yYajrCV/Rau3Q1+YbOV</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.2 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.2 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -21,10 +21,10 @@
 			<ServerName>10.200.255.3</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>iM2KEGq2KlcEZFC45PKKrQ==</Password>
+			<UserName>clab</UserName>
+			<Password>V3XuNi0YxbkUS+0JrLCl2dW//xmZS0Ql</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.3 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.3 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -34,10 +34,10 @@
 			<ServerName>10.200.255.4</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>GGujPAhEPq9cXzlvx8i1hw==</Password>
+			<UserName>clab</UserName>
+			<Password>QRODO0O85MPyHT6GoJ0oAF0KnqOkrFfj</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.4 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.4 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -47,10 +47,10 @@
 			<ServerName>10.200.255.5</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>dlJs0AISd2OgnHzKAaQHow==</Password>
+			<UserName>clab</UserName>
+			<Password>JCa2g3tWZCLHf6ynp55rza4SsdcD7dWG</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.5 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.5 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -60,10 +60,10 @@
 			<ServerName>10.200.255.6</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>o2x+6VjSkZ0VO/K3wo8rfA==</Password>
+			<UserName>clab</UserName>
+			<Password>akAtpM9M3FF+G/hqz8YqbmP07stv6zQa</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.6 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.6 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -73,10 +73,10 @@
 			<ServerName>10.200.255.7</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>79fnJiZN1x9jH8A4HYVmNg==</Password>
+			<UserName>clab</UserName>
+			<Password>Zk93mXjRlKzXU624G0qzRgJ4qbb3FsAh</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.7 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.7 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -86,10 +86,10 @@
 			<ServerName>10.200.255.8</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>mOgK6ZHYyJ3i/rr6QexVzw==</Password>
+			<UserName>clab</UserName>
+			<Password>kK959Vyk+/ReiKEXs8d7THnVr6UjKugY</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.8 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.8 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -99,10 +99,10 @@
 			<ServerName>10.200.255.9</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>qtmNcGsWq3Lh6byykFI39g==</Password>
+			<UserName>clab</UserName>
+			<Password>fs33wLrST/OzJYd9Mdd7RdELPPGWC0eE</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.9 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.9 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -112,10 +112,10 @@
 			<ServerName>10.200.255.10</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>fAmTCxMBM+td0qHDOk3nEA==</Password>
+			<UserName>clab</UserName>
+			<Password>XfQu45pwWJS9ztBmnR94t8KUYGhBlIEr</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.10 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.10 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
@@ -125,10 +125,10 @@
 			<ServerName>10.200.255.11</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>SyPTdfrDDFnx1OGfYtLKzA==</Password>
+			<UserName>clab</UserName>
+			<Password>lo2gIu43ulwAPxlUbj+CEqTaZXEgk+dz</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.11 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.11 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 	</Putty>
