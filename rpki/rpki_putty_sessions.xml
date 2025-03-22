@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+	<Putty>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>R1</DisplayName>
+			<UID>{2C1A01D0-0377-45B2-88F5-FCB32E14B233}</UID>
+			<ServerName>10.200.255.2</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>admin</UserName>
+			<Password>8TfhEzjhLLumIyiBfJg8JQ==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.2 -ssh -l admin</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>R2</DisplayName>
+			<UID>{6A3C0F1E-B3B3-483E-B09A-D15F3E9E66DB}</UID>
+			<ServerName>10.200.255.3</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>admin</UserName>
+			<Password>iM2KEGq2KlcEZFC45PKKrQ==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.3 -ssh -l admin</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>R3</DisplayName>
+			<UID>{9145AFCA-A2AC-4A29-BAFB-5212AE929509}</UID>
+			<ServerName>10.200.255.4</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>admin</UserName>
+			<Password>GGujPAhEPq9cXzlvx8i1hw==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.4 -ssh -l admin</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>R4</DisplayName>
+			<UID>{DA572AA0-3FE4-4E72-929E-1BE2846191BD}</UID>
+			<ServerName>10.200.255.5</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>admin</UserName>
+			<Password>dlJs0AISd2OgnHzKAaQHow==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.5 -ssh -l admin</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>R5</DisplayName>
+			<UID>{475AA0BE-6D7E-4733-A136-16BFAF2BC18B}</UID>
+			<ServerName>10.200.255.6</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>admin</UserName>
+			<Password>o2x+6VjSkZ0VO/K3wo8rfA==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.6 -ssh -l admin</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>R6</DisplayName>
+			<UID>{D50F42F9-67CC-41CE-B12B-4275DB538D33}</UID>
+			<ServerName>10.200.255.7</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>admin</UserName>
+			<Password>79fnJiZN1x9jH8A4HYVmNg==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.7 -ssh -l admin</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>XR1</DisplayName>
+			<UID>{C1B66FA2-8364-4820-98DC-B6353F8C8E13}</UID>
+			<ServerName>10.200.255.12</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>clab</UserName>
+			<Password>6cxBuv/uhAyRxbdpZSnStyKkxNeJfFOS</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.12 -ssh -l clab</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>XR2</DisplayName>
+			<UID>{A60E734D-DE74-4BFE-BF06-BF18A31B5B7D}</UID>
+			<ServerName>10.200.255.13</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>cisco</UserName>
+			<Password>DXaifIkcJYS4pEJcR95KuA==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.13 -ssh -l cisco</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>XR3</DisplayName>
+			<UID>{3B45A951-62D3-4BE6-90AC-E773B9CE0964}</UID>
+			<ServerName>10.200.255.14</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>clab</UserName>
+			<Password>vgQhDGfU6+zUuEcPLhNH+Asg7Zc4py39</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.14 -ssh -l clab</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>SW</DisplayName>
+			<UID>{2524E9EE-2CD8-4465-89C3-75B5580B0F4F}</UID>
+			<ServerName>10.200.255.18</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>admin</UserName>
+			<Password>WYjA3H5IdEwSSkFVfUukcg==</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.18 -ssh -l admin</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+	</Putty>
+</Servers>
