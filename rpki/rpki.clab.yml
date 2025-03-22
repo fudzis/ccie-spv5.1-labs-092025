@@ -1,0 +1,72 @@
+name: rpki
+mgmt:
+  network: fixedips
+  ipv4-subnet: 10.200.255.0/24
+
+topology:
+  kinds:
+    linux:
+      image: nlnetlabs/routinator
+    cisco_csr1000v:
+      image: vrnetlab/cisco_csr1000v:16.09.08
+    ceos:
+      image: ceos:4.32.0F
+  nodes:
+    R1:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.2
+    R2:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.3
+    R3:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.4
+    R4:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.5
+    R5:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.6
+      startup-delay: 300
+    R6:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.7
+      startup-delay: 300
+    XR2:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.13
+      image: vrnetlab/cisco_xrv:6.3.1
+      startup-delay: 400
+      startup-config: lab_configs/xrv_startup_config.cfg
+    XR5:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.16
+      image: vrnetlab/cisco_xrv:6.6.3
+      startup-delay: 450
+      startup-config: lab_configs/xrv_startup_config.cfg
+    XR6:
+      kind: cisco_xrv
+      mgmt-ipv4: 10.200.255.17
+      image: vrnetlab/cisco_xrv:6.6.3
+      startup-delay: 500
+      startup-config: lab_configs/xrv_startup_config.cfg
+    SW:
+      kind: ceos
+      mgmt-ipv4: 10.200.255.18
+      startup-config: lab_configs/SW.cfg
+    RPKI:
+      kind: linux
+      mgmt-ipv4: 10.200.255.19
+      ports:
+      - 80:8323
+
+  links:
+    - endpoints: ["R1:eth1","SW:eth1"]
+    - endpoints: ["R2:eth1","SW:eth2"]
+    - endpoints: ["R3:eth1","SW:eth3"]
+    - endpoints: ["R4:eth1","SW:eth4"]
+    - endpoints: ["R5:eth1","SW:eth5"]
+    - endpoints: ["R6:eth1","SW:eth6"]
+    - endpoints: ["XR2:eth1","SW:eth12"]
+    - endpoints: ["XR5:eth1","SW:eth15"]
+    - endpoints: ["XR6:eth1","SW:eth16"]
