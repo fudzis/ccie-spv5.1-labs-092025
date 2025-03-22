@@ -34,7 +34,7 @@ topology:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.12
       image: vrnetlab/cisco_xrv:6.6.3
-      startup-config: lab_configs/xrv_startup_config.cfg
+      startup-config: lab_configs/xrv_startup_config_6.6.3.cfg
     XR2:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.13
@@ -44,7 +44,7 @@ topology:
       kind: cisco_xrv
       mgmt-ipv4: 10.200.255.14
       image: vrnetlab/cisco_xrv:6.6.3
-      startup-config: lab_configs/xrv_startup_config.cfg
+      startup-config: lab_configs/xrv_startup_config_6.6.3.cfg
     SW:
       kind: ceos
       mgmt-ipv4: 10.200.255.18
@@ -65,4 +65,4 @@ topology:
     - endpoints: ["XR1:eth1","SW:eth11"]
     - endpoints: ["XR2:eth1","SW:eth12"]
     - endpoints: ["XR3:eth1","SW:eth13"]
-    - endpoints: ["RPKI:eth1","SW:eth17"]
+    - endpoints: ["RPKI:eth0","SW:eth17"]
