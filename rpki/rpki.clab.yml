@@ -53,7 +53,7 @@ topology:
       kind: linux
       mgmt-ipv4: 10.200.255.19
       exec:
-        - ip addr add 10.100.100.1/24 dev eth0
+        - ip addr add 10.100.100.1/24 dev eth1
 
   links:
     - endpoints: ["R1:eth1","SW:eth1"]
