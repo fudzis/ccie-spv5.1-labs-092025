@@ -65,4 +65,4 @@ topology:
     - endpoints: ["XR1:eth1","SW:eth11"]
     - endpoints: ["XR2:eth1","SW:eth12"]
     - endpoints: ["XR3:eth1","SW:eth13"]
-    - endpoints: ["RPKI:eth0","SW:eth17"]
+    - endpoints: ["RPKI:eth1","SW:eth17"]
