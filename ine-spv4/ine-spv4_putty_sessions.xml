@@ -185,32 +185,6 @@
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR5</DisplayName>
-			<UID>{CDE820BC-B117-45E5-B08E-333EB368A0C8}</UID>
-			<ServerName>10.200.255.16</ServerName>
-			<PuttyConType>4</PuttyConType>
-			<Port>0</Port>
-			<UserName>clab</UserName>
-			<Password>wnVnYbWHmsra0fW9bd1V6ZVPbWcKECyf</Password>
-			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.16 -ssh -l clab</CLParams>
-			<ScriptDelay>0</ScriptDelay>
-		</Node>
-		<Node Type="1">
-			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR6</DisplayName>
-			<UID>{C426C50E-A2EB-4F40-8D15-5CFBBCD7A299}</UID>
-			<ServerName>10.200.255.17</ServerName>
-			<PuttyConType>4</PuttyConType>
-			<Port>0</Port>
-			<UserName>clab</UserName>
-			<Password>09s+I7PBZBr9I0MRxG8/cTEY4bycthro</Password>
-			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.17 -ssh -l clab</CLParams>
-			<ScriptDelay>0</ScriptDelay>
-		</Node>
-		<Node Type="1">
-			<SavedSession>Default Settings</SavedSession>
 			<DisplayName>SW</DisplayName>
 			<UID>{2524E9EE-2CD8-4465-89C3-75B5580B0F4F}</UID>
 			<ServerName>10.200.255.18</ServerName>
