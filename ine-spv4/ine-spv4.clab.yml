@@ -72,18 +72,6 @@ topology:
       image: vrnetlab/cisco_xrv:6.3.1
       startup-delay: 500
       startup-config: lab_configs/xrv_startup_config.cfg
-    XR5:
-      kind: cisco_xrv
-      mgmt-ipv4: 10.200.255.16
-      image: vrnetlab/cisco_xrv:6.6.3
-      startup-delay: 600
-      startup-config: lab_configs/xrv_startup_config.cfg
-    XR6:
-      kind: cisco_xrv
-      mgmt-ipv4: 10.200.255.17
-      image: vrnetlab/cisco_xrv:6.6.3
-      startup-delay: 600
-      startup-config: lab_configs/xrv_startup_config.cfg
     SW:
       kind: ceos
       mgmt-ipv4: 10.200.255.18
