@@ -29,111 +29,111 @@
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR3</DisplayName>
+			<DisplayName>CSR3</DisplayName>
 			<UID>{C1B66FA2-8364-4820-98DC-B6353F8C8E13}</UID>
 			<ServerName>10.200.255.4</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>2Vxf0QQaUKg+LpJLYl4p9w==</Password>
+			<UserName>admin</UserName>
+			<Password>GGujPAhEPq9cXzlvx8i1hw==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.4 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.4 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR4</DisplayName>
+			<DisplayName>CSR4</DisplayName>
 			<UID>{DEF7CF33-4BAF-4E82-84F1-D4AE8C6B3724}</UID>
 			<ServerName>10.200.255.5</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>JWG3ueqa9JfTMtYa1C8qDQ==</Password>
+			<UserName>admin</UserName>
+			<Password>dlJs0AISd2OgnHzKAaQHow==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.5 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.5 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR5</DisplayName>
+			<DisplayName>CSR5</DisplayName>
 			<UID>{FC3AC78D-1217-4FDB-B0EA-7170754C4678}</UID>
 			<ServerName>10.200.255.6</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>+MOvh151CX/Vq6xdaJ0n7A==</Password>
+			<UserName>admin</UserName>
+			<Password>o2x+6VjSkZ0VO/K3wo8rfA==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.6 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.6 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR6</DisplayName>
+			<DisplayName>CSR6</DisplayName>
 			<UID>{B7A9C187-5477-4B58-9B2C-730DA0CF4608}</UID>
 			<ServerName>10.200.255.7</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>0EibrHR//WqlYPVR6hGa9g==</Password>
+			<UserName>admin</UserName>
+			<Password>79fnJiZN1x9jH8A4HYVmNg==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.7 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.7 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR7</DisplayName>
+			<DisplayName>CSR7</DisplayName>
 			<UID>{03466FD3-8929-4474-A2ED-F5836C48DEFC}</UID>
 			<ServerName>10.200.255.8</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>AviJO70xv993Wy65UNrXMA==</Password>
+			<UserName>admin</UserName>
+			<Password>mOgK6ZHYyJ3i/rr6QexVzw==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.8 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.8 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR8</DisplayName>
+			<DisplayName>CSR8</DisplayName>
 			<UID>{89FE4FDC-288D-4EFC-8DE0-F9A20D6C3650}</UID>
 			<ServerName>10.200.255.9</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>vjd6oEzod6znREk6ILWRKQ==</Password>
+			<UserName>admin</UserName>
+			<Password>qtmNcGsWq3Lh6byykFI39g==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.9 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.9 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR9</DisplayName>
+			<DisplayName>CSR9</DisplayName>
 			<UID>{EE54E9B6-1CC7-47D3-AFE9-A6F334410796}</UID>
 			<ServerName>10.200.255.10</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>4XxvKV6YyX4tiIhUrzlSKA==</Password>
+			<UserName>admin</UserName>
+			<Password>fAmTCxMBM+td0qHDOk3nEA==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.10 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.10 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR10</DisplayName>
+			<DisplayName>CSR10</DisplayName>
 			<UID>{399FF4F5-397D-4187-91FC-49C437FB85C6}</UID>
 			<ServerName>10.200.255.11</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>hiJq9VMEpv+Jip/qOc+vLQ==</Password>
+			<UserName>admin</UserName>
+			<Password>SyPTdfrDDFnx1OGfYtLKzA==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.11 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.11 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR11</DisplayName>
+			<DisplayName>XR1</DisplayName>
 			<UID>{FF508B25-3E3D-4B4A-B0F0-42890B323433}</UID>
 			<ServerName>10.200.255.12</ServerName>
 			<PuttyConType>4</PuttyConType>
@@ -146,47 +146,47 @@
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CSR1</DisplayName>
+			<DisplayName>XR2</DisplayName>
 			<UID>{3A4C307C-1618-4804-A632-710906A60489}</UID>
 			<ServerName>10.200.255.13</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>i/LCZpik8XU6ipQRFJRRbA==</Password>
+			<UserName>cisco</UserName>
+			<Password>DXaifIkcJYS4pEJcR95KuA==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.13 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.13 -ssh -l cisco</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CSR2</DisplayName>
+			<DisplayName>XR3</DisplayName>
 			<UID>{E9E80358-C3E8-4C73-9063-C5D74368EB6B}</UID>
 			<ServerName>10.200.255.14</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>K2ImKUZWVG4CObeozDlHFw==</Password>
+			<UserName>cisco</UserName>
+			<Password>lmSbqHNFC3He3GdcL4osqQ==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.14 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.14 -ssh -l cisco</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CSR3</DisplayName>
+			<DisplayName>XR4</DisplayName>
 			<UID>{A03598B5-1EBB-4F95-B284-BD4F685362BC}</UID>
 			<ServerName>10.200.255.15</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>cyycK2D0s7ZavTEmqNZXiQ==</Password>
+			<UserName>cisco</UserName>
+			<Password>v9gwExJ/+qmHLST3XtZM0Q==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.15 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.15 -ssh -l cisco</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CSR4</DisplayName>
-			<UID>{7765BDA0-AA25-4652-9892-5F45638B140D}</UID>
+			<DisplayName>SW</DisplayName>
+			<UID>{2524E9EE-2CD8-4465-89C3-75B5580B0F4F}</UID>
 			<ServerName>10.200.255.16</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
@@ -194,58 +194,6 @@
 			<Password>/f7dvRlQ1A5YClDZdxrx5A==</Password>
 			<PasswordDelay>0</PasswordDelay>
 			<CLParams>10.200.255.16 -ssh -l admin</CLParams>
-			<ScriptDelay>0</ScriptDelay>
-		</Node>
-		<Node Type="1">
-			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CSR5</DisplayName>
-			<UID>{135148FC-031D-4558-A9FE-F3469B0244E2}</UID>
-			<ServerName>10.200.255.17</ServerName>
-			<PuttyConType>4</PuttyConType>
-			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>IYCDi8+S/8193Hvczvhe9Q==</Password>
-			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.17 -ssh -l admin</CLParams>
-			<ScriptDelay>0</ScriptDelay>
-		</Node>
-		<Node Type="1">
-			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CSR6</DisplayName>
-			<UID>{BCB1A990-FAE1-43C3-9BBA-0F33402EE58C}</UID>
-			<ServerName>10.200.255.18</ServerName>
-			<PuttyConType>4</PuttyConType>
-			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>WYjA3H5IdEwSSkFVfUukcg==</Password>
-			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.18 -ssh -l admin</CLParams>
-			<ScriptDelay>0</ScriptDelay>
-		</Node>
-		<Node Type="1">
-			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>CSR7</DisplayName>
-			<UID>{2020A05B-57A4-4F79-8C7F-AF6983135D96}</UID>
-			<ServerName>10.200.255.19</ServerName>
-			<PuttyConType>4</PuttyConType>
-			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>xnmasLGhhyzvaet5fb0EWQ==</Password>
-			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.19 -ssh -l admin</CLParams>
-			<ScriptDelay>0</ScriptDelay>
-		</Node>
-		<Node Type="1">
-			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>SW</DisplayName>
-			<UID>{2524E9EE-2CD8-4465-89C3-75B5580B0F4F}</UID>
-			<ServerName>10.200.255.20</ServerName>
-			<PuttyConType>4</PuttyConType>
-			<Port>0</Port>
-			<UserName>admin</UserName>
-			<Password>VoxQOqUTRXY+p1gVnw4NvQ==</Password>
-			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.20 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 	</Putty>
