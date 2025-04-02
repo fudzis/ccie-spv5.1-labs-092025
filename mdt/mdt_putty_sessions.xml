@@ -21,10 +21,10 @@
 			<ServerName>10.200.255.3</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>cisco</UserName>
-			<Password>TEjzwibSeR7fJ3detlYy7g==</Password>
+			<UserName>clab</UserName>
+			<Password>V3XuNi0YxbkUS+0JrLCl2dW//xmZS0Ql</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.3 -ssh -l cisco</CLParams>
+			<CLParams>10.200.255.3 -ssh -l clab</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
