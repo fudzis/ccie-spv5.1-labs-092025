@@ -17,9 +17,11 @@ topology:
     XR1:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.2
+      startup-config: lab_configs/XR1/init.cfg
     XR2:
       kind: cisco_xrd
       mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/XR2/init.cfg
     Ubuntu:
       kind: generic_vm
       mgmt-ipv4: 10.200.255.4
