@@ -185,6 +185,19 @@
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
+			<DisplayName>NSO</DisplayName>
+			<UID>{E4727657-75AB-4E49-9D9F-B89B93C16E09}</UID>
+			<ServerName>10.200.255.16</ServerName>
+			<PuttyConType>4</PuttyConType>
+			<Port>0</Port>
+			<UserName>nso</UserName>
+			<Password>u/bBMScfYQU=</Password>
+			<PasswordDelay>0</PasswordDelay>
+			<CLParams>10.200.255.16 -ssh -l nso</CLParams>
+			<ScriptDelay>0</ScriptDelay>
+		</Node>
+		<Node Type="1">
+			<SavedSession>Default Settings</SavedSession>
 			<DisplayName>SW</DisplayName>
 			<UID>{2524E9EE-2CD8-4465-89C3-75B5580B0F4F}</UID>
 			<ServerName>10.200.255.18</ServerName>
