@@ -72,6 +72,13 @@ topology:
       image: vrnetlab/cisco_xrv:6.3.1
       startup-delay: 600
       startup-config: lab_configs/xrv_startup_config.cfg
+    NSO:
+      kind: linux
+      image: andrewohanian1/nso:6.1
+      mgmt-ipv4: 10.200.255.16
+      exec:
+        - ip addr add 10.254.0.1/24 dev eth1
+        - service ssh restart
     SW:
       kind: ceos
       mgmt-ipv4: 10.200.255.18
@@ -92,3 +99,4 @@ topology:
     - endpoints: ["XR2:eth1","SW:eth12"]
     - endpoints: ["XR3:eth1","SW:eth13"]
     - endpoints: ["XR4:eth1","SW:eth14"]
+    - endpoints: ["NSO:eth1","SW:eth15"]
