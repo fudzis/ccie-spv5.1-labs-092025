@@ -1,6 +1,7 @@
 import yaml
 import os
 import pprint
+import tarfile
 from netmiko import ConnectHandler
 import threading
 from http.server import HTTPServer, SimpleHTTPRequestHandler
@@ -27,6 +28,15 @@ def start_http_server():
     except KeyboardInterrupt:
         print("\nShutting down the server.")
         server.server_close()
+
+
+def create_tarball(node_name):
+    tar_path = f"{user_directory}/lab_configs/{node_name}.tar"
+    with tarfile.open(tar_path, "w") as tar:
+        node_config_path = f"{user_directory}/lab_configs/{node_name}"
+        for filename in os.listdir(node_config_path):
+            tar.add(os.path.join(node_config_path, filename), arcname=filename)
+    return tar_path
 
 
 def copy_files_to_node(node):
@@ -84,13 +94,17 @@ def copy_files_to_node(node):
 
 
         net_connect = ConnectHandler(**router)
-        for filename in os.listdir(f'{user_directory}/lab_configs/{node["name"]}'):
-            net_connect.send_command(f'copy http://{server_ip}:8000/{user_directory}/lab_configs/{node["name"]}/{filename} bootflash:{filename}',
-                expect_string = 'Destination')
-            output = net_connect.send_command(filename, expect_string = r'confirm\]|#')
-            if 'confirm' in output:
-                net_connect.send_command('\n', expect_string=node["name"])
 
+        #tar all config files, and then extract them, because individual file copies take forever
+        tar_path = create_tarball(node['name'])
+
+        net_connect.send_command(f'copy http://{server_ip}:8000/{tar_path} bootflash:config_files.tar',
+            expect_string = 'Destination')
+        output = net_connect.send_command('config_files.tar', expect_string = r'confirm\]|#')
+        if 'confirm' in output:
+            net_connect.send_command('\n', expect_string=node["name"])
+        net_connect.send_command_timing('run cd /bootflash: && tar xvf config_files.tar')
+        os.remove(tar_path)
 
     if node['kind'] == 'cisco_xrd':
         router = {
