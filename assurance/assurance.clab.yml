@@ -1,0 +1,25 @@
+name: mdt
+mgmt:
+  network: fixedips
+  ipv4-subnet: 10.200.255.0/24
+
+topology:
+  kinds:
+    cisco_csr1000v:
+      image: vrnetlab/cisco_csr1000v:16.09.08
+    cisco_xrv9k:
+      image: vrnetlab/cisco_xrv9k:7.7.1
+  nodes:
+    XR1:
+      kind: cisco_xrv9k
+      mgmt-ipv4: 10.200.255.2
+      env:
+        VPU: 4
+    CSR1:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.3
+    CSR2:
+      kind: cisco_csr1000v
+      mgmt-ipv4: 10.200.255.4
+  links:
+    - endpoints: ["CSR1:eth1","CSR2:eth1"]
