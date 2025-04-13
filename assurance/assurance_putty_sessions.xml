@@ -16,41 +16,28 @@
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>XR2</DisplayName>
+			<DisplayName>CSR1</DisplayName>
 			<UID>{6A3C0F1E-B3B3-483E-B09A-D15F3E9E66DB}</UID>
 			<ServerName>10.200.255.3</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>clab</UserName>
-			<Password>V3XuNi0YxbkUS+0JrLCl2dW//xmZS0Ql</Password>
+			<UserName>admin</UserName>
+			<Password>iM2KEGq2KlcEZFC45PKKrQ==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.3 -ssh -l clab</CLParams>
+			<CLParams>10.200.255.3 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 		<Node Type="1">
 			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>Ubuntu</DisplayName>
-			<UID>{2020A05B-57A4-4F79-8C7F-AF6983135D96}</UID>
+			<DisplayName>CSR2</DisplayName>
+			<UID>{4AFF9D64-0104-4966-A42E-E5798688D0A5}</UID>
 			<ServerName>10.200.255.4</ServerName>
 			<PuttyConType>4</PuttyConType>
 			<Port>0</Port>
-			<UserName>clab</UserName>
-			<Password>QRODO0O85MPyHT6GoJ0oAF0KnqOkrFfj</Password>
-			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.4 -ssh -l clab</CLParams>
-			<ScriptDelay>0</ScriptDelay>
-		</Node>
-		<Node Type="1">
-			<SavedSession>Default Settings</SavedSession>
-			<DisplayName>SW</DisplayName>
-			<UID>{2524E9EE-2CD8-4465-89C3-75B5580B0F4F}</UID>
-			<ServerName>10.200.255.5</ServerName>
-			<PuttyConType>4</PuttyConType>
-			<Port>0</Port>
 			<UserName>admin</UserName>
-			<Password>dlJs0AISd2OgnHzKAaQHow==</Password>
+			<Password>GGujPAhEPq9cXzlvx8i1hw==</Password>
 			<PasswordDelay>0</PasswordDelay>
-			<CLParams>10.200.255.5 -ssh -l admin</CLParams>
+			<CLParams>10.200.255.4 -ssh -l admin</CLParams>
 			<ScriptDelay>0</ScriptDelay>
 		</Node>
 	</Putty>
