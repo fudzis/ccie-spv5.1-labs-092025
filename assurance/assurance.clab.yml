@@ -7,19 +7,19 @@ topology:
   kinds:
     cisco_csr1000v:
       image: vrnetlab/cisco_csr1000v:16.09.08
-    cisco_xrv9k:
-      image: vrnetlab/cisco_xrv9k:7.7.1
+    cisco_xrd:
+      image: ios-xr/xrd-control-plane:7.9.2
   nodes:
     XR1:
-      kind: cisco_xrv9k
+      kind: cisco_xrd
       mgmt-ipv4: 10.200.255.2
-      env:
-        VPU: 4
     CSR1:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.3
+      startup-config: lab_configs/CSR1/init.cfg
     CSR2:
       kind: cisco_csr1000v
       mgmt-ipv4: 10.200.255.4
+      startup-config: lab_configs/CSR2/init.cfg
   links:
     - endpoints: ["CSR1:eth1","CSR2:eth1"]
