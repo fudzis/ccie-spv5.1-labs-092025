@@ -6,7 +6,7 @@ mgmt:
 topology:
   kinds:
     cisco_iol:
-      image: vrnetlab/cisco_iol:17.12.01
+      image: vrnetlab/cisco_iol:XE_17_15_01
     ceos:
       image: ceos:4.32.0F
   nodes:
